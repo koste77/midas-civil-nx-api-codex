@@ -1,4 +1,4 @@
-# midas-civil-nx-api
+# midas-civil-nx-api-codex
 
 [中文](README.md) | [English](README.en.md)
 
