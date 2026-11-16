@@ -62,10 +62,3 @@ python -X utf8 -B scripts/midas_api.py get UNIT --output unit.json
 
 Task scripts must explicitly request model changes and analysis. Only read-only GET requests may be retried automatically within a finite limit. After a mutation or analysis timeout, inspect the actual state first. See [API contracts](references/api-contracts.md) and [troubleshooting](references/troubleshooting.md).
 
-## Publication review
-
-This release copy contains only skill instructions, general-purpose code, synthetic test data, and repository documentation. Complete external URLs, fixed machine paths, and references to the originating project's history have been removed. Generic relative API endpoints, the authentication header name, and environment variable names are retained so the guidance remains usable.
-
-Test addresses are constructed in memory from a reserved invalid example domain. Network calls are mocked in tests, and no real service addresses or credentials are included. Generated engineering models, logs, environment files, and Python caches are outside the release contents.
-
-Offline tests verify client and planner behavior. They do not establish compatibility with other MIDAS installations or validate engineering results.
