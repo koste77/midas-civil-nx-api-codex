@@ -2,11 +2,12 @@
 
 [中文](README.md) | [English](README.en.md)
 
-A Codex skill for MIDAS Civil NX 2024, with guidance for parametric modeling and analysis verification, a Python standard-library API client, and an offline parameter update planner. Verify fields and analysis behavior against the target installation.
+This skill helps users **perform parametric modeling and analysis in MIDAS Civil NX through Python**. It assists with turning structural geometry, material, section, boundary, and load parameters into modeling scripts that use the REST API to create or modify models, run static and modal analyses, and extract and verify results. It targets CIVIL NX 2024; verify fields and analysis behavior against the target installation.
 
 ## Capabilities and scope
 
-- Connect through environment variables, read model databases through generic REST endpoints, and let task scripts explicitly request model changes or analysis.
+- Help write Python scripts for parametric modeling and analysis, including creating models from verified record structures or modifying existing templates.
+- Connect through environment variables, read and write model databases through the REST API, and let Python task scripts explicitly run analyses and extract results.
 - Generate `set` / `scale` updates to existing numeric fields in a fixed topology from a frozen baseline, avoiding cumulative scaling.
 - Parse results by their actual table headers, and check request success, analysis completion, and result freshness separately.
 - Redact configured credentials and connection addresses when echoed, and block redirects that could forward authentication headers.
