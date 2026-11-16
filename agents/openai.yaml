@@ -1,0 +1,4 @@
+interface:
+  display_name: "MIDAS Civil NX 2024 API"
+  short_description: "通过REST API完成Civil NX参数化建模、分析与结果核验"
+  default_prompt: "使用 $midas-civil-nx-api 对模型执行参数化建模与分析，先核对版本、单位、任务副本及计算预算。"
